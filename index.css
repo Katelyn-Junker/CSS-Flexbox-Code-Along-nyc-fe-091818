@@ -1,1 +1,48 @@
+/* Flex Container */
+.flex-nav ul {
+  border:1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
+/* <div class="flex-nav">
+<ul><li> */
+.flex-nav ul li {
+  flex-grow: 3;
+}
+
+.flex-nav ul .social {
+  flex-grow: 1;
+}
+
+
+/* Tablet */
+@media all and (max-width:1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+  
+  .flex-nav ul li {
+    width: 50%;
+  }
+
+  .flex-nav ul .social {
+    width: 25%;
+  }
+}
+
+@media all and (max-width:500px) {
+  .flex-nav ul {
+    flex-direction: column;
+  }
+  
+  .flex-nav ul li {
+    width: 100%;
+  }
+  
+  .flex-nav ul .social {
+    width: 100%;
+  }
+}
